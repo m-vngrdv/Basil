@@ -1,0 +1,87 @@
+.hero
+    height: 810px
+    background-color: #111113
+    background-image: url('%=static=%assets/hero/hero__bg.jpg')
+    background-position: center top
+    background-repeat: no-repeat
+    overflow: hidden
+.hero__container 
+    position: relative
+    padding-top: 100px
+    padding-left: 100px
+    @include _768
+        padding-left: 75px
+    
+
+.hero__social-list
+    position: absolute
+    left: 0
+    display: flex
+    writing-mode: tb-rl
+    transform: rotate(180deg)
+    margin: 0
+    padding: 0
+    list-style: none
+    @include _1230
+        left: 15px
+
+.hero__social-item
+    margin-bottom: 70px
+    position: relative
+    &::after
+        content: ''
+        position: absolute
+        bottom: -56px
+        left: 50%
+        display: block
+        width: 1px
+        height: 34px
+        background-color: #48484f;
+    &:last-child
+        margin-bottom: 0
+        &:after
+            display: none
+
+.hero__social-link
+    font-family: $MontBold
+    font-size: 12px
+    line-height: 16px
+    color: #01793f
+    text-transform: uppercase
+    text-decoration: none
+
+.hero__title
+    max-width: 475px
+    margin: 0
+    margin-bottom: 28px
+    font-family: $Karmina
+    font-size: 72px
+    letter-spacing: 7.2px
+    color: #ffffff
+    @include _992
+        font-size: 48px
+    @include _480
+        font-size: 34px
+
+.hero__subtitle 
+    max-width: 450px
+    margin: 0
+    margin-bottom: 44px
+    color: #98949f
+    font-size: 14px
+    line-height: 24px
+    @include _576
+        max-width: 250px
+.hero__btn
+    padding: 25px 47px
+    border: none
+    border-radius: 30px
+    font-family: $MontBold
+    font-size: 12px
+    text-transform: uppercase
+    color: #ffffff
+    background-color: #c91c22
+    box-shadow: 0 10px 21px rgba(201, 28, 34, 0.21)
+    cursor: pointer
+    &:hover
+        background-color: #e32d33

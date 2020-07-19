@@ -1,0 +1,50 @@
+.btn {
+    background-color: transparent;
+    border: 1px solid #B8B8B8;
+    font-family: $MontBold;
+}
+
+.btn-large {
+    display: inline-block;
+    padding: 17px 33px;
+    font-size: 12px;
+    line-height: 9px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #01793f;
+    border-radius: 50px;
+    &:hover {
+        background-color: #A6BBB1;
+        border-color: #A6BBB1;
+    }
+}
+
+.btn-large--red {
+    border: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #c91c22;
+    box-shadow: 0 10px 21px rgba(201, 28, 34, 0.21);
+    cursor: pointer;
+    &:hover {
+        background-color: #e32d33;
+    }
+}
+    
+.btn-slider {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin-right: 10px;
+    &:last-child {
+        margin-right: 0;
+    }
+    &:hover {
+        border: none;
+        background-color: #A6BBB1;
+        .btn-slider__icon {
+            fill: #fff;
+        }
+    }
+}

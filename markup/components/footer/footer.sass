@@ -1,0 +1,43 @@
+.footer 
+    padding-top: 55px
+    padding-bottom: 52px
+    background-image: url('%=static=%general/dark-bg.jpg')
+    
+.footer__container
+    display: flex
+    justify-content: space-between
+    align-items: center
+    @include _1230
+        flex-wrap: wrap
+
+.footer__copyright
+    margin: 0
+    font-size: 12px
+    line-height: 16px
+    color: #98949f
+    @include _480
+        margin-bottom: 15px
+
+.footer__nav
+    @include _992
+        width: 100%
+        margin-top: 25px
+        order: 3
+
+.footer__nav-list
+    @include _992
+        justify-content: space-between
+        flex-wrap: wrap
+
+.footer__nav-item
+    @include _768
+        margin-bottom: 15px
+
+.footer__phone
+    @include _992
+        order: 2
+    
+
+.phone__link--small
+    font-size: 24px
+    letter-spacing: 1.2px

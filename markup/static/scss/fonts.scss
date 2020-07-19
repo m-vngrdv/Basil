@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+         url('../fonts/Montserrat-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MontserratBold';
+    src: url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+         url('../fonts/Montserrat-Bold.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RosaMarena';
+    src: url('../fonts/RosaMarena.woff2') format('woff2'),
+         url('../fonts/RosaMarena.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KarminaBold';
+    src: url('../fonts/Karmina-Bold.woff2') format('woff2'),
+         url('../fonts/Karmina-Bold.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+$Mont: 'Montserrat', Helvetica, Arial, sans-serif;
+$MontBold: 'MontserratBold', Helvetica, Arial, sans-serif;
+$RosaMarena: 'RosaMarena', Helvetica, Arial, sans-serif;
+$Karmina: 'KarminaBold', Helvetica, Arial, sans-serif;
+

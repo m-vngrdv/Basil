@@ -1,0 +1,82 @@
+.news-page
+    padding-bottom: 155px
+
+.section-news 
+    padding-top: 60px
+    padding-bottom: 120px
+    text-align: center
+
+.section-news__suptitle
+    margin-bottom: 24px
+    line-height: 28px
+
+.section-news__title
+    margin-bottom: 70px
+    line-height: 30px
+
+.news__list
+    display: flex
+    margin: 0 -15px
+    padding: 0
+    list-style: none
+    text-align: left
+    
+
+.section-news__list
+    margin-bottom: 48px
+    @include _992
+        flex-wrap: wrap
+
+.news__list--wrap
+    flex-wrap: wrap
+
+.news__item
+    padding: 0 15px
+    width: 100%
+    flex: 0 0 33.333333%
+    @include _992
+        flex: 0 0 50%
+        margin-bottom: 25px
+    @include _480
+        flex: 0 0 100%
+        margin-bottom: 35px
+
+.news__item--mb
+    margin-bottom: 60px
+
+.news__cover
+    width: 100%
+    margin-bottom: 40px
+    max-width: 370px
+    max-height: 200px
+    border-radius: 8px
+    @include _480
+        margin-bottom: 20px
+
+
+.news__link
+    text-decoration: none
+
+.news__title
+    margin: 0
+    margin-bottom: 27px
+    font-size: 18px
+    color: #ffffff
+    &:hover
+        color: #c91c22
+    @include _480
+        margin-bottom: 15px
+
+.news__title--gray
+    color: #333333
+
+.news__desc
+    margin: 0
+    font-size: 14px
+    line-height: 20px
+    color: #a396a2
+    
+.news__desc--gray
+    color: #666666
+
+.news__btn 

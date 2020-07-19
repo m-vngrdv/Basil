@@ -1,0 +1,193 @@
+// Common styles of the project
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.page__body {
+    font-family: $Mont;
+}
+
+.page__inner {
+    padding-top: 75px;
+}
+
+.page__body--light {
+    background-image: url('%=static=%/general/light-bg.jpg');
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1170px;
+    
+    @include _1230 {
+        padding: 0 15px;
+    }
+}
+
+.section-suptitle {
+    margin: 0;
+    font-family: $RosaMarena;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    color: #01793f;
+}
+
+.section-title {
+    margin: 0;
+    font-family: $Karmina;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 3.6px;
+    text-align: center;
+}
+
+.section-title--white {
+    color: #ffffff;
+}
+
+.section-title--gray {
+    color: #333333;
+}
+
+.section-title--left {
+    text-align: left;
+    margin-bottom: 53px;
+}
+
+.section-blob {
+    position: relative;
+    &::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 42px;
+        position: absolute;
+        top: -42px;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+    &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 25px;
+        position: absolute;
+        top: -15px;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+}
+
+.section-blob--dark {
+    background-color: #18171B;
+    background-image: url('%=static=%/general/dark-bg.jpg');
+    background-position: top center;
+    background-repeat: repeat;
+    &::before {
+        background-image: url('%=static=%/general/dark-blob.png');
+    }
+    &::after {
+        background-image: url('%=static=%/general/dark-foliage.png');
+    }
+}
+
+.section-blob--light {
+    background-color: #E5F0EA;
+    background-image: url('%=static=%/general/light-bg.jpg');
+    &::before {
+        background-image: url('%=static=%/general/light-blob.png');
+    }
+    &::after {
+        background-image: url('%=static=%/general/light-foliage.png');
+    }
+}
+
+.section-blob--black {
+    background-color: #131215;
+    &::before {
+        background-image: url('%=static=%/general/black-blob.png');
+    }
+    &::after {
+        background-image: url('%=static=%/general/dark-foliage.png');
+    }
+}
+
+
+
+.section-blob--light-line {
+    background-color: #E5F0EA;
+    background-image: url('%=static=%/general/light-bg.jpg');
+    &::before {
+        height: 45px;
+        top: -45px;
+        background-image: url('%=static=%/general/light-blob--line.png');
+    }
+    &::after {
+        background-image: url('%=static=%/general/light-foliage.png');
+    }
+}
+
+.slider-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.card__list {
+    @include nl;
+    margin: 0 -15px;
+}
+
+.card__item {
+    position: relative;
+    padding: 0 15px;
+    min-height: 370px;
+}
+
+.card__link {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    overflow: hidden;
+    border-radius: 10px;
+    background-image: url('%=static=%general/dark-bg.jpg');
+    &:hover {
+        background-image: none;
+        background-color: #C91C22;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 22px;
+        left: 25px;
+        width: 220px;
+        height: 299px;
+        background-image: url('%=static=%/assets/catalog/line.svg');
+        background-repeat: no-repeat;
+        opacity: .2;
+    }
+}
+
+.card__cover {
+    max-width: 270px;
+    max-height: 270px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 28px;
+    border-radius: 10px;
+}
+
+.card__content {
+    padding: 0 50px;
+    text-align: center;
+    color: #fff;
+}

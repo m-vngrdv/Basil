@@ -1,0 +1,64 @@
+.advantages
+    min-height: 555px
+    padding-top: 55px
+    background-color: #18171B
+    background-image: url('%=static=%/general/dark-bg.jpg')
+    background-position: top center
+    background-repeat: repeat
+    @include _1230
+        padding-bottom: 85px
+
+.advantages__suptitle 
+    margin-bottom: 11px
+
+.advantages__title 
+    margin-bottom: 12px
+
+.advantages__list
+    display: flex
+    justify-content: space-between
+    margin: 0
+    padding: 0
+    list-style: none
+    @include _1230
+        flex-wrap: wrap
+        justify-content: space-around
+
+.advantages__item
+    padding-top: 92px
+    padding-left: 170px
+    background-repeat: no-repeat
+    @include _480
+        padding-left: 0
+        padding-top: 220px
+        background-position: 0 0
+
+.advantages__item--first
+    background-image: url('%=static=%assets/advantages/advantages__icon-1.png')
+    background-position: left -20px top 45px
+
+.advantages__item--second
+    background-image: url('%=static=%assets/advantages/advantages__icon-2.png')
+    background-position: left -20px top 19px
+
+.advantages__item--third
+    background-image: url('%=static=%assets/advantages/advantages__icon-3.png')
+    background-position: left -20px top
+    
+.advantages__text-wrap 
+    max-width: 195px
+
+.advantages__name
+    margin: 0
+    margin-bottom: 30px
+    font-family: $MontBold
+    font-size: 18px
+    line-height: 22px
+    color: #ffffff
+
+.advantages__text
+    margin: 0
+    font-size: 12px
+    line-height: 22px
+    color: #98949f
+    opacity: 0.81

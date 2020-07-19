@@ -1,0 +1,184 @@
+.header--bg
+    background-image: url('%=static=%general/dark-bg.jpg')
+    background-color: #131313
+    padding-bottom: 34px
+    overflow: hidden
+
+.header__container
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 15px
+    @include _1230
+        flex-wrap: wrap
+
+.header__logo
+    position: relative
+    &::before
+        content: ''
+        position: absolute
+        display: block
+        bottom: 32px
+        left: 206px
+        height: 1px
+        width: 2000px
+        background-color: #48484f
+    &::after
+        content: ''
+        position: absolute
+        display: block
+        bottom: 32px
+        right: 206px
+        height: 1px
+        width: 2000px
+        background-color: #48484f
+
+.header__nav
+    @include _992
+        margin-bottom: 25px
+        flex-grow: 1
+        order: 3
+    @include _768
+        display: none
+        position: fixed
+        top: 0
+        left: 0
+        width: 100vw
+        height: 100vh
+        background-color: #121215
+        z-index: 10
+
+.header__nav--active
+    display: block
+
+.nav__list
+    display: flex
+    margin: 0
+    padding: 0
+    list-style: none
+   
+
+.header__nav-list
+    @include _992
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        width: 100%
+    @include _768
+        width: 100%
+        height: 100%
+        padding-top: 55px
+
+.nav__item
+    margin-right: 22px
+    &:last-child
+        margin-right: 0
+
+.header__nav-item
+    @include _768
+        flex-basis: 100%
+        margin-right: 0
+        text-align: center
+        align-self: center
+
+.nav__link
+    color: #98949f
+    font-family: $MontBold
+    font-size: 12px
+    line-height: 16px
+    text-transform: uppercase
+    text-decoration: none
+    &:hover
+        color: #ffffff
+
+.nav__link--header
+    @include _768
+        padding: 15px 0
+        display: block
+        width: 100%
+    &::after
+        content: ''
+        display: block
+        position: relative
+        bottom: -43px
+        width: 100%
+        height: 3px
+        background-color: transparent
+        @include _992
+            display: none
+        @include _768
+            display: block
+            background-color: #C91C22
+            width: 200px
+            height: 2px
+            left: 50%
+            bottom: -15px
+            margin-left: -100px
+    &:hover
+        &::after
+            background-color: #C91C22
+            @include _768
+                width: 300px
+                margin-left: -150px
+
+.header__btn-close
+    display: none
+    @include _768
+        position: absolute
+        top: 20px
+        right: 20px
+        display: block
+        padding: 10px
+        border: none
+        z-index: 100
+
+.nav__link--current
+    &::after
+        content: ''
+        display: block
+        position: relative
+        bottom: -43px
+        width: 100%
+        height: 3px
+        background-color: #C91C22
+
+.header__phone
+    @include _476
+        order: 3
+
+.header__call-us
+    display: block
+    margin-bottom: 10px
+    font-family: $RosaMarena
+    font-size: 24px
+    line-height: 22px
+    color: #01793f
+    @include _1230
+        font-size: 20px
+
+.phone__link
+    display: block
+    font-family: $Karmina
+    line-height: 24px
+    color: #fff
+    text-transform: uppercase
+    text-decoration: none
+
+.phone__link--large
+    font-size: 30px
+    letter-spacing: 1.5px
+    @include _1230
+        font-size: 24px
+
+.phone__dot 
+    color: #c91c22
+
+
+.header__btn-nav
+    display: none
+    @include _768
+        display: block
+        padding: 10px
+        border: none
+    @include _476
+        order: 2

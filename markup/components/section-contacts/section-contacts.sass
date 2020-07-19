@@ -1,0 +1,185 @@
+.section-contacts
+    padding-top: 60px
+    
+.section-contacts__suptitle
+    margin-bottom: 14px
+    line-height: 39px
+
+.section-contacts__title
+    margin-bottom: 62px
+    line-height: 28px
+
+.section-contacts__map
+    position: relative
+    display: flex
+    z-index: 2
+    @include _768
+        flex-wrap: wrap
+    
+.map
+    width: 100% 
+    &::before
+        content: ''
+        position: absolute
+        bottom: 42px
+        left: -199px
+        width: 192px
+        height: 131px
+        background-image: url(%=static=%assets/section-contacts/map-bg-02.jpg)
+        z-index: 2
+        @include _1230
+            display: none
+            background-image: none
+
+.map--min
+    &::before
+        display: none
+        background-image: none
+
+.map__info
+    padding-top: 34px
+    padding-bottom: 45px
+    padding-left: 33px
+    padding-right: 33px
+    width: 100%
+    max-width: 300px
+    background-color: #fff
+    @include _768
+        max-width: 100%
+    &::before
+        content: ''
+        position: absolute
+        top: -78px
+        left: -63px
+        width: 359px
+        height: 223px
+        background-image: url(%=static=%assets/section-contacts/map-bg-01.jpg)
+        z-index: -1
+        @include _768
+            display: none
+            background-image: none
+    &::after
+        content: ''
+        position: absolute
+        top: 180px
+        left: -139px
+        width: 359px
+        height: 223px
+        background-image: url(%=static=%assets/section-contacts/map-bg-01.jpg)
+        z-index: -1
+        @include _768
+            display: none
+            background-image: none
+
+.map__logo
+    display: block
+    margin: 0 auto 40px
+
+.map__contacts-list 
+    margin: 0
+    margin-bottom: 55px
+    padding: 0
+    list-style: none
+
+.map__contacts-item
+    position: relative
+    margin-bottom: 55px
+    font-size: 14px
+    line-height: 20px
+    color: #333333
+    &::after
+        content: ''
+        display: block
+        position: relative
+        bottom: -27px
+        left: -20px
+        width: 240px
+        height: 1px
+        background-color: #ccd8d2
+        @include _768
+            width: 100%
+    &:last-child
+        margin-bottom: 0
+        &::after
+            display: none
+
+.map__contacts-item--address
+    padding-left: 36px
+    &::before
+        content: ''
+        position: absolute
+        top: -5px
+        left: 0
+        width: 18px
+        height: 24px
+        background-image: url('%=static=%assets/section-contacts/address.jpg')
+        background-repeat: no-repeat
+    
+.map__contacts-item--phone 
+    padding-left: 44px
+    &::before
+        content: ''
+        position: absolute
+        top: -3px
+        left: 0
+        width: 24px
+        height: 24px
+        background-image: url('%=static=%assets/section-contacts/phone.jpg')
+        background-repeat: no-repeat
+
+.map__contacts-phone,
+.map__contacts-email
+    font-size: 14px
+    line-height: 14px
+    color: #333333
+    text-decoration: none
+    &:hover
+        color: #c91c22
+
+.map__contacts-item--email
+    padding-left: 40px
+    &::before
+        content: ''
+        position: absolute
+        top: 3px
+        left: 0
+        width: 24px
+        height: 24px
+        background-image: url('%=static=%assets/section-contacts/email.jpg')
+        background-repeat: no-repeat
+
+.map__social-list
+    display: flex
+    justify-content: center
+    margin: 0
+    padding: 0
+    list-style: none
+
+.map__social-list--bottom
+    position: absolute
+    bottom: 45px
+
+.map__social-item
+    margin-right: 9px
+    &:last-child
+        margin-right: 0
+
+.map__social-link
+    display: block
+    width: 100%
+    height: 100%
+    line-height: 0
+
+.map__wrap
+    position: relative
+    min-height: 100%
+    width: 100%
+    @include _768
+        height: 500px
+
+.map__wrap-resize
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%

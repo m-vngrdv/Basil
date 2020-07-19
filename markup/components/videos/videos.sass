@@ -1,0 +1,133 @@
+.videos
+    padding-top: 60px
+    padding-bottom: 124px
+
+.videos__suptitle 
+    margin-bottom: 11px
+    line-height: 40px
+
+.videos__title
+    margin-bottom: 80px
+    line-height: 29px
+
+.videos__player-wrap
+    display: flex
+    justify-content: space-between
+    @include _992
+        flex-wrap: wrap
+
+.videos__cover
+    align-self: start
+
+.videos__list
+    margin: 0
+    margin-top: 18px
+    padding: 0
+    list-style: none
+    @include _992
+        width: 100%
+
+.videos__item 
+    position: relative
+    max-width: 530px
+    margin-bottom: 62px
+    padding-left: 29px
+    @include _992
+        max-width: 100%
+        width: 100%
+    &::before,
+    &::after
+        content: ''
+        display: block
+        position: absolute
+    &::before
+        top: calc(50% - 18.5px)
+        left: 0
+        width: 3px
+        height: 37px
+        background-color: #39383d
+    &::after
+        left: 0
+        bottom: -31px
+        width: 100%
+        height: 1px
+        background-color: #ffffff
+        opacity: 0.14
+    &:last-child
+        margin-bottom: 0
+        &::after
+            display: none
+
+
+.videos__item--current
+    &::before
+        background-color: #c91c22
+
+.videos__name
+    margin: 0
+    font-size: 14px
+    line-height: 24px
+    color: #a396a2
+    cursor: pointer
+    text-decoration: none
+    &:hover
+        color: #ffffff
+
+.videos__name--current
+    color: #ffffff
+
+
+/* Video Player*/
+.video
+    max-width: 570px
+    max-height: 320px
+    width: 100%
+    height: auto
+    margin-right: 20px
+    @include _992
+        max-width: 100%
+        max-height: none
+        margin-right: 0
+
+.video__media
+	width: 100%
+	height: 100%
+	border: none
+
+.video__link
+    position: relative
+    display: block
+    width: 100%
+    height: 100%
+    
+.video__button
+	position: absolute
+	top: 50%
+	left: 50%
+	z-index: 1
+	display: none
+	padding: 0
+	width: 68px
+	height: 48px
+	border: none
+	background-color: transparent
+	transform: translate(-50%, -50%)
+	cursor: pointer
+
+.video__button-shape 
+	fill: #212121
+	fill-opacity: 0.8
+
+.video__button:focus 
+	outline: none
+
+.video:hover .video__button-shape,
+.video__button:focus .video__button-shape
+	fill: #ff0000
+	fill-opacity: 1
+
+.video--enabled
+	cursor: pointer
+
+.video--enabled .video__button
+	display: block

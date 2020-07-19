@@ -1,0 +1,102 @@
+.section-reviews
+    padding-top: 62px
+    padding-bottom: 110px
+    background-image:  url('%=static=%assets/section-reviews/garlic.jpg'), url('%=static=%/general/light-bg.jpg')
+    background-repeat: no-repeat, repeat
+    background-position: bottom 6px right 48px, 0 0
+    text-align: center 
+    @include _1230
+        background-position: bottom 6px right -100px, 0 0
+    @include _768
+        background-position: bottom 6px right -300px, 0 0
+
+.section-reviews__suptitle
+    margin-bottom: 16px
+    line-height: 36px
+
+.section-reviews__title
+    line-height: 30px
+    margin-bottom: 67px
+    
+.reviews__list
+    display: flex
+    flex-wrap: wrap
+    margin: 0 -15px
+    padding: 0
+    list-style: none 
+    
+.section-reviews__list
+    margin-bottom: 50px
+    flex-wrap: nowrap
+    @include _1230
+        flex-wrap: wrap
+
+.reviews__item
+    display: flex
+    padding: 0 15px
+    @include _1230
+        margin-bottom: 25px
+    @include _480
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+
+.reviews__about-author
+    align-self: start
+    margin-right: 50px
+    @include _480
+        margin-right: 0
+
+.reviews__avatar
+    max-width: 119px
+    max-height: 119px
+    margin-bottom: 10px
+    border-radius: 50%
+
+.reviews__name-author
+    margin: 0
+    font-size: 14px
+    line-height: 24px
+    text-align: center
+    color: #333333
+
+.reviews__date
+    margin: 0
+    color: #666666
+    font-size: 12px
+    line-height: 24px
+    text-align: center
+    
+
+.reviews__text
+    align-self: start
+    position: relative
+    margin: 0
+    padding: 37px 33px
+    font-size: 14px
+    line-height: 20px
+    text-align: left
+    color: #666666
+    border-radius: 8px
+    background-color: #fff
+    box-shadow: 0 20px 32px rgba(2, 4, 5, 0.07)
+    &::before,
+    &::after
+        content: ''
+        display: block
+        position: absolute
+        background-repeat: no-repeat
+    &::before
+        top: 24px
+        left: -29px
+        width: 29px
+        height: 23px
+        background-image: url('%=static=%general/part-phrase.png')
+        @include _480
+            display: none
+    &::after
+        top: -15px
+        left: 33px
+        width: 44px
+        height: 31px
+        background-image: url('%=static=%general/quotation-marks.png')
